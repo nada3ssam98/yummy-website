@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>yummy</title>
+</head>
+<body class="bg-black">
+    <div class="outer-spinner-screen">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div id="searchContainer" class="container w-75 py-5">
+
+    </div>
+
+
+
+
+    <div class="side-nav min-vh-100 d-flex position-fixed top-0" style="left: -208.05px;">
+        <div class="navTab bg-black d-flex justify-content-between flex-column p-4">
+            <div class="menuCotainer">
+                <ul class="seachUL">
+                    <li onclick="showSearchContainer();navSwap()" class="position-relative" style="top: 30px;">Search</li>
+                    <li onclick="getCategories();navSwap()" class="position-relative" style="top: 30px;">Categories</li>
+                    <li onclick="getArea();navSwap()" class="position-relative" style="top: 30px;">Area</li>
+                    <li onclick="getIngredients();navSwap()" class="position-relative" style="top: 30px;">Ingredients</li>
+                    <li onclick="contactUs();navSwap()" class="position-relative" style="top: 30px;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="copyRight">
+                <div class="icons d-flex align-items-center">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright Â© 2019 All <br>RightsReserved.</p>
+            </div>
+        </div>
+        <div class="navHeader d-flex justify-content-between flex-column align-items-center p-4 bg-light">
+            <img src="images/logo.png" class="imgSticker" alt="">
+            <i class="fa-solid open-close-icon fa-2x fa-x" id="closeIcon" onclick="navSwap()"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container min-vh-100 position-relative">
+        <div class="spinner-screen" style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div id="rowData" class="row g-4 p-5">
+
+        </div>
+    </div>
+     
+
+
+
+<!-- =============================== bootstrap js file =============================== -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+* ,
+*::after ,
+*::before
+{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+ ul{
+    padding: 0!important;
+ }
+ .spinner-screen{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    position: absolute;
+    background-color: black;
+    color: white;
+ }
+ .outer-spinner-screen{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    background-color: black;
+    color: white;
+ }
+ .seachUL li{
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+ }
+.side-nav{
+    left: 0px;
+    white-space: nowrap;
+    z-index: 1999;
+}
+.recipesList{
+    background-color: #09c;
+    padding: 5px;
+    display: inline;
+    border-radius: 10px;
+}
+.icons i{
+    padding: 3px;
+}
+.imgSticker{
+    width: 50px;
+}
+#closeIcon{
+    cursor: pointer;
+}
+.mealLayer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: 0.5s;
+    
+}
+.meal:hover .mealLayer{
+    top: 0;
+    
+}
+.meal:hover {
+    cursor: pointer;
+
+}
+@media screen and (min-width: 576px) {
+   
+ }
+ @media screen and (min-width: 768px) {
+ }
+ @media screen and (min-width: 992px) {
+   
+ }
+ @media screen and (min-width: 1200px) {
+    
+ }
+ @media screen and (min-width: 1400px) {
+  
+ }
+ /* ====================== End Media Query ======================*/
